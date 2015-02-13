@@ -1,0 +1,14 @@
+Testsuite: ItemsServiceSpec
+Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 2.242 sec
+------------- Standard Output ---------------
+--Output from testService--
+--Output from testSaveAction--
+Before: 0, after: 1
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from testService--
+--Output from testSaveAction--
+------------- ---------------- ---------------
+
+Testcase: testService took 1.651 sec
+Testcase: testSaveAction took 0.559 sec

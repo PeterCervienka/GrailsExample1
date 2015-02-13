@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite errors="0" failures="0" hostname="WS-SK-CEPE" id="0" name="ItemsServiceSpec" package="ch.erni.grails.example" tests="2" time="2.242" timestamp="2015-02-10T16:23:44">
+      <properties />
+
+      <testcase classname="ItemsServiceSpec" name="testService" time="1.651" />
+
+      <testcase classname="ItemsServiceSpec" name="testSaveAction" time="0.559" />
+
+      <system-out><![CDATA[--Output from testService--
+--Output from testSaveAction--
+Before: 0, after: 1
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testService--
+--Output from testSaveAction--
+]]></system-err>
+
+  </testsuite>
+</testsuites>
