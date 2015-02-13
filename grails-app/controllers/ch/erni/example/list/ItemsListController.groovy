@@ -1,12 +1,16 @@
 package ch.erni.example.list
 
+import ch.erni.example.Item
+
 class ItemsListController {
 
     def itemsService;
 
     def index() {
         // add array to controller. Without this, i cant use this array in view
-        def map = [items : itemsService.getAll()];
+        def list =  itemsService.getAll().sort({ it.id })
+
+        def map = [items : list]
 
         render(view: "index", model: map)
     }
@@ -20,7 +24,7 @@ class ItemsListController {
         def item = itemsService.get(params.getLong("id"));
         itemsService.remove(item);
 
-        def map = [items : itemsService.getAll()];
+        def map = [items : itemsService.getAll().sort({ it.id })];
 
         render(view: "_table", model: map)
     }

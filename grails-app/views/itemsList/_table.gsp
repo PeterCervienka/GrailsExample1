@@ -36,7 +36,7 @@
             <td>
                 <div class="buttons">
                     <g:link class="edit" action="actionShowDetail" params="[id:item.id]">Edit</g:link>
-                    <g:remoteLink class="delete" action="actionRemoveDetail" params="[id:item.id]" update="itemsTableContainer" >Removeee</g:remoteLink>
+                    <g:remoteLink class="delete" action="actionRemoveDetail" params="[id:item.id]" update="itemsTableContainer" >Remove</g:remoteLink>
 
                 </div>
 
