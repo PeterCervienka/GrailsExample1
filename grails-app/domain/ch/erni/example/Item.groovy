@@ -89,4 +89,13 @@ class Item {
     void setUpdatedBy(User updatedBy) {
         this.updatedBy = updatedBy
     }
+
+    String getFormattedCreationDate() {
+        return StringUtils.formatAsDateAndTime(this.created)
+    }
+
+
+    String getFormattedChangingDate() {
+        return StringUtils.formatAsDateAndTime(this.updated)
+    }
 }

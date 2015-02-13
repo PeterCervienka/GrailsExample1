@@ -22,8 +22,6 @@ class ItemsDetailController {
 
         Item item
 
-        System.out.print(params)
-
         if (params.id != null && params.getLong("id") > 0) {
             item = itemsService.get(params.getLong("id"))
             item.name = params.name;

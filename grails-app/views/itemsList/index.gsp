@@ -7,6 +7,7 @@
 
 <%@ page contentType="text/html;charset=UTF-8" %>
 <%@ page import="ch.erni.example.Item" %>
+
 <html>
 <head>
     <meta name="layout" content="main">
@@ -14,6 +15,7 @@
 </head>
 
 <body>
+
     <h1>This is list of available items</h1>
     <div class="nav" role="navigation">
         <ul>
@@ -24,5 +26,7 @@
     <div id="itemsTableContainer">
         <g:render template="table" model="['items':items]"/>
     </div>
+
+
 </body>
 </html>

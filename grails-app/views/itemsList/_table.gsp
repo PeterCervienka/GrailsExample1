@@ -25,14 +25,14 @@
             <g:else>
                 <td>Unknown</td>
             </g:else>
-            <td>${item.created}</td>
+            <td>${item.getFormattedCreationDate()}</td>
             <g:if test="${item.updatedBy != null}">
                 <td>${item.updatedBy.code}</td>
             </g:if>
             <g:else>
                 <td></td>
             </g:else>
-            <td>${item.updated}</td>
+            <td>${item.getFormattedChangingDate()}</td>
             <td>
                 <div class="buttons">
                     <g:link class="edit" action="actionShowDetail" params="[id:item.id]">Edit</g:link>
